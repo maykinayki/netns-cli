@@ -1,0 +1,23 @@
+{
+  "name": "netns-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "ts-node": "ts-node",
+    "apply": "ts-node index.ts apply -f",
+    "delete": "ts-node index.ts delete -f"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "commander": "^8.2.0",
+    "get-ip-range": "^4.0.1",
+    "yaml": "^1.10.2"
+  }
+}

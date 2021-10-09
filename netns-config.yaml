@@ -1,0 +1,18 @@
+network:
+  ip: 10.0.0.0
+  subnet: 24
+  mask: true
+  namespaces:
+    - name: one
+      internet_access: true
+      loopback: true
+    - name: two
+      host_access: true
+      internet_access: true
+      loopback: true
+    - name: three
+      internet_access: true
+      loopback: true
+  bridge:
+    type: bridge
+    name: vbr0
